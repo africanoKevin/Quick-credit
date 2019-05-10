@@ -1,0 +1,121 @@
+body {
+    text-align: center;
+    background: #ffff;
+    color: #606468;
+    font: 87.5%/1.5em Arial, Helvetica, sans-serif;
+    margin: 0;
+    /*font-size: 20px;
+    /*font-family: 'Titillium Web', sans-serif;*/
+}
+
+form {
+    width: 50%;
+    background-color: #01676b;
+    padding-bottom: 100px;
+    margin-left: 25%;
+    padding-top: 10px;
+    margin: 5% 0 5% 25%;
+}
+
+header {
+    background-color: #01676b;
+    color: #ffff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #e8491d 5px solid;
+    margin-top: 20px;
+}
+
+p {
+    color: #ffff;
+}
+
+p a {
+    color: #e8491d;
+}
+
+.bodycontainer {
+    margin-top: 30px;
+}
+
+.input {
+    margin: 30px 0 30px 0;
+}
+
+input[type='password'],
+input[type='email'],
+input[type='text'] {
+    padding: 15px;
+    width: 50%;
+}
+
+.para {
+    display: inline;
+}
+
+strong {
+    color: #ffff;
+}
+
+button {
+    background-color: #15cda8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    opacity: 1;
+    background-color: green;
+}
+
+.buttoncancel {
+    background-color: #e8491d;
+}
+
+.buttoncancel:hover {
+    background-color: red;
+    opacity: 1;
+}
+
+.buttonlogin {
+    background-color: #5ca0d3;
+    width: 55%
+}
+
+.headcontainer {
+    margin-bottom: 60px;
+}
+
+#links {
+    padding: 0 100px 20px 0px;
+    text-align: right;
+}
+
+.loan {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 10px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 20px
+}
+
+@media screen and (max-width: 300px) {
+    .buttonsignup,
+    .buttoncancel,
+    .buttonlogin,
+    input[type='password'],
+    input[type='email'],
+    input[type='text'],
+    #links {
+        width: 100%;
+    }
+}
