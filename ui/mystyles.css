@@ -1,0 +1,229 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    line-height: 1.5px;
+}
+
+header {
+    background-color: #01676b;
+    color: #ffff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #e8491d 5px solid;
+    margin-top: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+/*styles for input boxxes, textarea and select*/
+
+input[type=text],
+select,
+textarea,
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #eaf5ff;
+    margin-bottom: 5px;
+}
+
+
+/*styles for label*/
+
+label {
+    padding: 12px 12px 0px 0;
+    display: inline;
+}
+
+
+/*styles for the submitt button*/
+
+input[type=submit] {
+    background-color: #15cda8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    color: #ffff;
+    font-weight: bold;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #01676b;
+    padding: 20px;
+    margin: 0px 100px 0 100px;
+    padding-bottom: 100px;
+}
+
+
+/*styles to float column with class col-25*/
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin: 6px 0 0 0;
+}
+
+
+/*styles to float column with class col-75*/
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 0 0 10px;
+}
+
+
+/*clear floats after columns*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*styles for the button on the approval page*/
+
+button {
+    background-color: #15cda8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.verifybody {
+    padding-top: 40px;
+}
+
+.admincontainer {
+    padding-top: 40px;
+    text-align: left;
+}
+
+.loancontainer {
+    padding-top: 30px;
+}
+
+.clientsection {
+    margin: 10px 0 40px 0;
+    border-bottom: 5px #e8491d solid;
+    padding-bottom: 10px;
+}
+
+.loansection h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*styles for the div container*/
+
+.buttonverify {
+    width: 20%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.buttonverify:hover {
+    opacity: 1;
+    background-color: green;
+}
+
+.buttoncancel {
+    width: 20%;
+    display: block;
+    margin-bottom: 30px;
+    background-color: #e8491d;
+}
+
+.buttoncancel:hover {
+    opacity: 1;
+    background-color: red;
+}
+
+.buttonsubmit {
+    float: right;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.buttonsubmit:hover {
+    opacity: 1;
+    background-color: green;
+}
+
+#approvalcontainer {
+    margin: 100px;
+    padding-bottom: 50px
+}
+
+#approvalbody {
+    background-color: #085f63;
+}
+
+.app {
+    margin-bottom: 5px;
+}
+
+
+/*make responsive layouts ie when width is less than 6oopx, the columns should go on top of eaach other instead of next to each other.*/
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit],
+    button {
+        width: 100%;
+        margin-top: 0;
+    }
+    .buttonverify {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .buttoncancel {
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    .clientsection {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .col-75 {
+        margin-top: 20px;
+    }
+    .col-25 {
+        margin-top: 20px;
+    }
+    .loansection h3 {
+        margin-top: 40px;
+    }
+    .verifyhead {
+        width: 100%;
+        text-align: center;
+    }
+    header h1 {
+        float: none;
+    }
+}
