@@ -32,6 +32,9 @@
         "babel-watch": "^7.0.0",
         "coveralls": "^3.0.3"
     },
+    "engines": {
+        "node": "11.13.0"
+    },
     "devDependencies": {
         "eslint": "^5.16.0",
         "eslint-config-airbnb-base": "^13.1.0",
