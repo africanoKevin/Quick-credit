@@ -6,7 +6,8 @@
     "scripts": {
         "test": "nyc mocha ./server/tests/test.js --require @babel/register --exit",
         "build": "babel app.js --out-dir build",
-        "dev-start": "babel-watch app.js"
+        "dev-start": "babel-watch app.js",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
     "author": "africano",
     "license": "ISC",
@@ -20,9 +21,7 @@
         "moment": "^2.24.0",
         "query-string": "^6.5.0",
         "travis-ci": "^2.2.0",
-        "uuid": "^3.3.2"
-    },
-    "devDependencies": {
+        "uuid": "^3.3.2",
         "@babel/core": "^7.4.4",
         "@babel/preset-env": "^7.4.4",
         "@babel/register": "^7.4.4",
@@ -31,6 +30,9 @@
         "babel-install": "2.1.0",
         "babel-preset-env": "^1.7.0",
         "babel-watch": "^7.0.0",
+        "coveralls": "^3.0.3"
+    },
+    "devDependencies": {
         "eslint": "^5.16.0",
         "eslint-config-airbnb-base": "^13.1.0",
         "eslint-plugin-import": "^2.17.2",
