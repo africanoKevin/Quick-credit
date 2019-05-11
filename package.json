@@ -8,7 +8,8 @@
         "build": "babel app.js --out-dir build",
         "dev-start": "babel-watch app.js",
         "coverage": "nyc report --reporter=text-lcov | coveralls",
-        "watch": "nodemon --exec babel-node server/app.js"
+        "watch": "nodemon --exec babel-node server/app.js",
+        "babel-version": "babel --version"
     },
     "author": "africano",
     "license": "ISC",
@@ -37,6 +38,7 @@
         "eslint": "^5.16.0",
         "eslint-config-airbnb-base": "^13.1.0",
         "eslint-plugin-import": "^2.17.2",
-        "nyc": "^14.1.1"
+        "nyc": "^14.1.1",
+        "babel-cli": "^6.6.5"
     }
 }
