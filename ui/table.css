@@ -3,20 +3,21 @@ body {
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
-    background-color: #f4f4f4;
-    or
+    background-color: #01676b;
+    font-size: 15px;
+    color: white
     /*font: 15px/1.5/ Arial, Helvetica, sans-serif;*/
 }
 
 .headcontainer {
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
 header {
     background-color: #01676b;
-    color: #ffff;
+    color: white;
     padding-top: 10px;
     min-height: 70px;
     border-bottom: #e8491d 5px solid;
@@ -61,7 +62,7 @@ header a:hover {
 
 #tablesection {
     background-color: #01676b;
-    border-bottom: #e8491d 10px solid;
+    border-bottom: #e8491d 0px solid;
 }
 
 table {
@@ -69,6 +70,12 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-left: 30px;
+}
+
+#upperlink {
+    float: right;
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -80,29 +87,43 @@ button {
     height: 30px;
     border: none;
     padding: 0 15px 0 15px;
-    background-color: #e8491d;
+    background-color: #e4a796;
     border-radius: 4px;
 }
 
-td,
-th {
+
+/*input[type=submit] {
+    background-color: #15cda8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}*/
+
+td {
     /*border: 1px solid #dddddd;*/
-    text-align: left;
+    text-align: center;
     padding: 20px;
+    padding-bottom: 60px
 }
 
 th {
     padding-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 .buttonreject {
-    background-color: red;
+    background-color: rgb(97, 35, 35);
     border-radius: 4px;
     border: none;
     cursor: pointer;
     color: #ffff;
-    display: block;
+    display: inline-block;
     padding-right: 25px;
+    margin-left: 5px;
 }
 
 .buttonapprove {
@@ -118,7 +139,7 @@ button:hover {
     opacity: 1;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:200px) {
     header #applhead,
     header nav,
     header nav li {
@@ -130,6 +151,16 @@ button:hover {
         width: 100%;
     }
     th {
-        padding-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    td {
+        padding-left: 20px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h1 {
+        text-align: center
     }
 }

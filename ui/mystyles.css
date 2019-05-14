@@ -1,13 +1,14 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #01676b;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffff;
+    color: black;
     line-height: 1.5px;
+    color: white
 }
 
 header {
     background-color: #01676b;
-    color: #ffff;
+    color: white;
     padding-top: 10px;
     min-height: 70px;
     border-bottom: #e8491d 5px solid;
@@ -47,8 +48,8 @@ label {
 /*styles for the submitt button*/
 
 input[type=submit] {
-    background-color: #15cda8;
-    color: white;
+    background-color: #888;
+    color: #888;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -101,7 +102,7 @@ input[type=submit]:hover {
 
 button {
     background-color: #15cda8;
-    color: white;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -187,7 +188,7 @@ button {
 
 /*make responsive layouts ie when width is less than 6oopx, the columns should go on top of eaach other instead of next to each other.*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200px) {
     .col-25,
     .col-75,
     input[type=submit],
