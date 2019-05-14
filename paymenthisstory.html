@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Track client Payment history</title>
-    <link rel="stylesheet" href="css/track.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="track.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+</head>
+
+<body>
     <header>
-      <div class="historycontainer">
-        <div class="trackheader">
-          <h1>Repayment history</h1>    
+        <div class="historycontainer">
+            <div class="trackheader">
+                <h1>Repayment history</h1>
+            </div>
+
         </div>
-
-      </div>
+        <button type="submit"><a href="index.html">Return Home</a></button>
     </header>
+
     <section id="history">
-      <div style='overflow-x:auto;' class="tracktable">
-        <table border-spacing='5px'>
-          <tr>
-            <th>Date</th>
-            <th>Old Status</th>
-            <th>New Status</th>
-          </tr>
+        <div class="tracktable">
+            <table border-spacing='5px'>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Date</th>
+                    <th>Loan Amount</th>
+                    <th>Amount paid</th>
+                    <th>Loan Balance</th>
+                    <th>Loan Status</th>
+                </tr>
+                <tr>
+                    <td>Africano</td>
+                    <td>Emmanuel</td>
+                    <td>
+                        <13|02|2019/td>
+                            <td>2000.00</td>
+                            <td>1000.00</td>
+                            <td>1000.00</td>
+                            <td>Not fully paid</td>
+                </tr>
+                <tr>
+                    <td>Africano</td>
+                    <td>Emmanuel</td>
+                    <td>12|05|2015</td>
+                    <td>5000.00</td>
+                    <td>2000.00</td>
+                    <td>3000.00</td>
+                    <td>Not fully paid</td>
+                </tr>
+                <tr>
+                    <td>Africano</td>
+                    <td>Emmanuel</td>
+                    <td>12|07|2018</td>
+                    <td>5000.00</td>
+                    <td>5000.00</td>
+                    <td>0.00</td>
+                    <td>Fully paid</td>
+                </tr>
+            </table>
 
-          <tr>
-            <td>17|02|2018</td>
-            <td>Fully paid</td>
-            <td>Application pending Approval</td>
-          </tr>
-
-          <tr>
-            <td>15|04|2018</td>
-            <td>Application pending Approval</td>
-            <td>Application Approved</td>
-          </tr>
-
-          <tr>
-            <td>11|09|2018</td>
-            <td>Application Approved</td>
-            <td>Active in Good standing</td>
-          </tr>
-
-        </table>
-
-      </div>
+        </div>
     </section>
+    <script src="app.js" charset="utf-8"></script>
+</body>
 
-
-
-
-  </body>
 </html>
