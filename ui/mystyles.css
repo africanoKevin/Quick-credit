@@ -188,7 +188,7 @@ button {
 
 /*make responsive layouts ie when width is less than 6oopx, the columns should go on top of eaach other instead of next to each other.*/
 
-@media screen and (max-width: 200px) {
+@media screen and (min-width: 200px) {
     .col-25,
     .col-75,
     input[type=submit],
