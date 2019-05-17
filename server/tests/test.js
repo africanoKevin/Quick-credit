@@ -1,5 +1,4 @@
 import { use, request, expect } from 'chai';
-
 import chaiHttp from 'chai-http';
 import app from '../app';
 
@@ -10,17 +9,7 @@ describe('POST auth/signup', () => {
         request(app).post('/api/v1/auth/signup')
             .send({ firstname: 'John', lastname: 'Muneza' })
             .end((err, res) => {
-                expect(res.status).to.equal(200);
-                done(err);
-            });
-    });
-});
-describe('GET /api/v1/loans', () => {
-    it('should be able to get a loan application', (done) => {
-        request(app).get('/api/v1/loans')
-            .send()
-            .end((err, res) => {
-                expect(res.status).to.equal(200);
+                expect(res.status).to.equal(201);
                 done(err);
             });
     });
