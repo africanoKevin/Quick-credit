@@ -1,17 +1,24 @@
-let _express = require('express');
+"use strict";
 
-let _express2 = _interopRequireDefault(_express);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _express = _interopRequireDefault(require("express"));
 
-let app = (0, _express2.default)();
-const port = process.env.PORT || 4000;
+var _bodyParser = _interopRequireDefault(require("body-parser"));
 
-app.use(_express2.default.json());
+var _masterRoute = _interopRequireDefault(require("./routes/masterRoute"));
 
-app.get('/', (req, res) =>
-        res.status(200).send({ message: 'congratulations your first end point is working' });
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-        app.listen(port, () => {
-            console.log('server is running on port 4000');
-        });
+var app = (0, _express["default"])();
+var port = process.env.PORT || 4000;
+app.use(_bodyParser["default"].json());
+(0, _masterRoute["default"])(app);
+app.listen(port, function () {
+  console.log('server is running on port 4000 ');
+});
+var _default = app;
+exports["default"] = _default;
