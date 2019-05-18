@@ -11,6 +11,6 @@ app.use(bodyParser.json());
 masterRoute(app);
 
 app.listen(port, () => {
-    ('server is running on port 3000 ');
+    console.debug('server is running on port 3000 ');
 });
 export default app;
