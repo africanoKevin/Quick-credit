@@ -160,6 +160,8 @@ example request body
 
 ### PATCH /loans/:id
 this endpoint approves a loan application
+example request body;
+```
 {
     "first": "simon",
     "lastName": "emmanuel",
