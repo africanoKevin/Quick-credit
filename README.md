@@ -4,7 +4,7 @@
 
 Quick-credit App is an online lending application that provides short term soft loans to individuals. This helps solve problems of financial inclusion as away to elleviate poverty and empower low income earners.
 
-##Getting started
+## Getting started
 To get the Quick-credit project running on your local computer, you need to clone this repo, and the latest version of Node.js installed.
 
 Then run the following commands to start the system.
