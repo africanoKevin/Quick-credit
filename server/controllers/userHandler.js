@@ -10,7 +10,6 @@ export const UserSignUp = (req, res) => {
         Body.id = AppDb.users.length + 1;
         Body.status = 'unverified';
         Body.isAdmin = false;
-        AppDb.users.push(Body);
         const user = {
             id: Body.id,
             token: Body.token,
@@ -20,6 +19,7 @@ export const UserSignUp = (req, res) => {
             password: Body.password,
             status: Body.status || '',
         };
+        AppDb.users.push(user);
         res.status(201).json({ status: 201, data: user });
     }
 };
