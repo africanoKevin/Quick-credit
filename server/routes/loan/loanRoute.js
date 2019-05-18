@@ -1,4 +1,9 @@
-import { Apply, LoanApplications, loadLoans } from '../../controllers/loanHandlers';
+import {
+    Apply,
+    loadLoans,
+    SingleLoan,
+    approveLoan,
+} from '../../controllers/loanHandlers';
 
 import { repay, loadRepayment } from '../../controllers/repaymentHandler';
 
@@ -6,18 +11,20 @@ import { repay, loadRepayment } from '../../controllers/repaymentHandler';
 const loanRoute = (expressApp) => {
     expressApp.post('/api/v1/loans', Apply);
 
-    expressApp.get('/api/v1/loans', LoanApplications);
-
-    expressApp.get('/api/v1/loans/:id');
-
+    // gets all loans
     expressApp.get('/api/v1/loans', loadLoans);
 
-    expressApp.patch('/api/v1/loans/:id');
+    // gets a single loan
+    expressApp.get('/api/v1/loans/:id', SingleLoan);
+
+    // approves a loan application
+    expressApp.patch('/api/v1/loans/:id', approveLoan);
+
     // repayment routes.
 
     expressApp.post('/api/v1/loans/repayment', repay);
 
-    expressApp.get('/api/v1/loan/repayment', loadRepayment);
+    expressApp.get('/api/v1/loans/:id/repayments', loadRepayment);
 };
 
 export default loanRoute;
